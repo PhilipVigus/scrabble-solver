@@ -21,5 +21,10 @@ describe("Scrabble", () => {
       const scrabble = new Scrabble("quirky");
       expect(scrabble.score()).toEqual(22);
     });
+
+    it("scores 41 for OXYPHENBUTAZONE", () => {
+      const scrabble = new Scrabble("OXYPHENBUTAZONE");
+      expect(scrabble.score()).toEqual(41);
+    });
   });
 });
