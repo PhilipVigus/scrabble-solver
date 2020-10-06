@@ -16,5 +16,10 @@ describe("Scrabble", () => {
       const scrabble = new Scrabble("street");
       expect(scrabble.score()).toEqual(6);
     });
+
+    it("scores 22 for quirky", () => {
+      const scrabble = new Scrabble("quirky");
+      expect(scrabble.score()).toEqual(22);
+    });
   });
 });
