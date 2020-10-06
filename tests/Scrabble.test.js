@@ -11,5 +11,10 @@ describe("Scrabble", () => {
       const scrabble = new Scrabble("f");
       expect(scrabble.score()).toEqual(4);
     });
+
+    it("scores 6 for street", () => {
+      const scrabble = new Scrabble("street");
+      expect(scrabble.score()).toEqual(6);
+    });
   });
 });
