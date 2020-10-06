@@ -1,11 +1,16 @@
 class Scrabble {
   constructor(word) {
-    this.word = word;
+    this.word = word.toUpperCase();
   }
 
   score() {
-    return 1;
+    return letterScores[this.word];
   }
 }
+
+const letterScores = {
+  A: 1,
+  F: 4,
+};
 
 export default Scrabble;
